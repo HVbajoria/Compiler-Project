@@ -23,7 +23,6 @@ class parser(QtWidgets.QMainWindow):
 
         self.ui.displayButton.clicked.connect(self.disp)
         self.ui.firstButton.clicked.connect(self.disp_first)
-        self.ui.clr1Button.clicked.connect(self.disp_lr1_states)
         self.ui.lalrButton.clicked.connect(self.disp_lalr_states)
         self.ui.parseTableButton.clicked.connect(self.disp_parse_table)
         self.ui.parse.clicked.connect(self.disp_parsing)

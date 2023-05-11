@@ -63,10 +63,6 @@ class Ui_MainWindow(object):
         self.firstButton.setGeometry(QtCore.QRect(10, 75, 110, 30))
         self.firstButton.setObjectName(_fromUtf8("firstButton"))
         
-        self.clr1Button = QtWidgets.QPushButton(self.rowWithButtons)
-        self.clr1Button.setGeometry(QtCore.QRect(10, 150, 110, 30))
-        self.clr1Button.setObjectName(_fromUtf8("clr1Button"))
-        
         self.lalrButton = QtWidgets.QPushButton(self.rowWithButtons)
         self.lalrButton.setGeometry(QtCore.QRect(10, 225, 110, 30))
         self.lalrButton.setObjectName(_fromUtf8("lalrButton"))
@@ -155,8 +151,7 @@ class Ui_MainWindow(object):
         MainWindow.setTabOrder(self.lineEdit, self.parse)
         MainWindow.setTabOrder(self.parse, self.displayButton)
         MainWindow.setTabOrder(self.displayButton, self.firstButton)
-        MainWindow.setTabOrder(self.firstButton, self.clr1Button)
-        MainWindow.setTabOrder(self.clr1Button, self.lalrButton)
+        MainWindow.setTabOrder(self.firstButton, self.lalrButton)
         MainWindow.setTabOrder(self.lalrButton, self.parseTableButton)
         MainWindow.setTabOrder(self.parseTableButton, self.displayScreen)
 
@@ -169,7 +164,6 @@ class Ui_MainWindow(object):
         self.parse.setText(_translate("MainWindow", "Parse", None))
         self.displayButton.setText(_translate("MainWindow", "Display", None))
         self.firstButton.setText(_translate("MainWindow", "First", None))
-        self.clr1Button.setText(_translate("MainWindow", "CLR(1) items", None))
         self.lalrButton.setText(_translate("MainWindow", "LALR(1) items", None))
         self.parseTableButton.setText(_translate("MainWindow", "Parsing Table", None))
         self.enterGrammarLabel.setText(_translate("MainWindow", "Enter grammar :", None))
@@ -184,7 +178,6 @@ class Ui_MainWindow(object):
         self.parse.setStyleSheet("background-color: white; border: 2px solid black; color: black;")
         self.displayButton.setStyleSheet("background-color: white; border: 2px solid black; color: black;")
         self.firstButton.setStyleSheet("background-color: white; border: 2px solid black; color: black;")
-        self.clr1Button.setStyleSheet("background-color: white; border: 2px solid black; color: black;")
         self.lalrButton.setStyleSheet("background-color: white; border: 2px solid black; color: black;")
         self.parseTableButton.setStyleSheet("background-color: white; border: 2px solid black; color: black;")
         self.headingLabel.setStyleSheet("color: black;")
